@@ -1,9 +1,12 @@
 import React from 'react'
 import "../scss/layout.scss"
+import Sidebar from './Sidebar'
 
 const Layout = () => {
   return (
-    <div>Layout</div>
+    <div>
+        <Sidebar/>
+    </div>
   )
 }
 
