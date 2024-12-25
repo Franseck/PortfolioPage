@@ -23,69 +23,90 @@
   }
 }
 
-nav{
+nav {
+  display: block;
+  text-align: center;
+  position: absolute;
+  height: 210px;
+  top: 50%;
+  margin-top: -8rem;
+  width: 100%;
+  a {
+    font-size: 1.2rem;
+    color: $October-2-hex;
     display: block;
-    text-align: center;
-    position: absolute;
-    height: 210px;
-    top: 50%;
-    margin-top: -8rem;
-    width: 100%;
-    a{
-font-size: 1.2rem;
-color: $October-2-hex;
-display: block;
-line-height: 3.2rem;
-height: 3.2rem;
-position: relative;
-text-decoration: none;
-i{
-    transition: all 0.3s ease-out;
-}
-&:hover{
-    color: $October-4-hex;
-    svg {
+    line-height: 3.2rem;
+    height: 3.2rem;
+    position: relative;
+    text-decoration: none;
+    i {
+      transition: all 0.3s ease-out;
+    }
+    &:hover {
+      color: $October-4-hex;
+      svg {
         opacity: 0;
+      }
+      &:after {
+        opacity: 1;
+      }
     }
     &:after {
-        opacity: 1;
+      content: "";
+      font-size: 10px;
+      letter-spacing: 2px;
+      position: absolute;
+      bottom: 0;
+      display: block;
+      width: 100%;
+      text-align: center;
+      opacity: 0;
+      transition: all 0.3s ease-out;
     }
+    &:first-child {
+      &::after {
+        content: "HOME";
+      }
     }
-    &:after{
-        content: "";
-    font-size: 10px;
-    letter-spacing: 2px;
-    position: absolute;
-    bottom: 0;
-    display: block;
-    width: 100%;
-    text-align: center;
-    opacity: 0;
-    transition: all 0.3s ease-out;
-    }
-    &:first-child{
-        &::after {
-            content: "HOME";
+  }
 
-        }
+  a.about-link {
+    &::after {
+      content: "ABOUT";
     }
+  }
+  a.contact-link {
+    &::after {
+      content: "CONTACT";
     }
-
-    a.about-link{
-        &::after {
-            content: "ABOUT";
-    
-        }
+  }
+  a.active {
+    svg {
+      color: $Teals-2;
     }
-    a.contact-link{
-        &::after {
-            content: "CONTACT";
-            }
-    }
-a.active{
-    svg{
-        color: $Teals-2;
-    }
+  }
 }
 
+ul{
+    position: absolute;
+    bottom: 1.2rem;
+    width: 100%;
+    display: block;
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    text-align: center;
+    
+li{ 
+    margin: 1rem;
+
+a{
+     color: $Teals-1;
+     padding: 7px 0;
+     font-size: 1.3rem;
+    &:hover{
+        color: $October-4-hex;
+    }
+}
+}
 }
