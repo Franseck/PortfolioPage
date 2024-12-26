@@ -87,26 +87,26 @@ nav {
   }
 }
 
-ul{
-    position: absolute;
-    bottom: 1.2rem;
-    width: 100%;
-    display: block;
-    padding: 0;
-    list-style: none;
-    margin: 0;
-    text-align: center;
-    
-li{ 
+ul {
+  position: absolute;
+  bottom: 1.2rem;
+  width: 100%;
+  display: block;
+  padding: 0;
+  list-style: none;
+  margin: 0;
+  text-align: center;
+
+  li {
     margin: 1rem;
 
-a{
-     color: $Teals-1;
-     padding: 7px 0;
-     font-size: 1.3rem;
-    &:hover{
+    a {
+      color: $Teals-1;
+      padding: 7px 0;
+      font-size: 1.3rem;
+      &:hover {
         color: $October-4-hex;
+      }
     }
-}
-}
+  }
 }
