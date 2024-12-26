@@ -1,0 +1,62 @@
+@import "./variables";
+
+.container {
+    width: 100%;
+    will-change: contents;
+    height: 90%;
+    position: absolute;
+    opacity: 0;
+    top: 5;
+    margin: 0 auto;
+    z-index: 1;
+    transform-style:preserve-3d ;
+    animation: fadeIn 1s forwards;
+    animation-delay: 1s;
+}
+.text-zone {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40%;
+    max-height: 90%;
+}
+h1{
+    color: $October-2-hex;
+    font-size: 2rem;
+    margin: 0;
+    font-family: "Fredericka the Great";
+    font-weight: 400;
+    &::before{
+        content:"{";
+        font-family: "Wallpoet" ;
+        color: $October-1-hex;
+        font-size: 1.2rem;
+        position: absolute;
+        margin-top: -2.2rem;
+        left: 1rem;
+        opacity: 0.6;
+    }
+    &::after{
+        content:"}";
+        font-family: "Wallpoet" ;
+        color: $October-1-hex;
+        font-size: 1.2rem;
+        position: absolute;
+        margin-top: 1.2rem;
+        margin-left: 1.5rem;
+        animation: fadeIn 1s 1.8s backwards;
+        opacity: 0.6;
+    }
+    img{
+        width: 2rem;
+        margin-left:1rem ;
+        opacity: 0;
+        height: auto;
+        animation: rotateIn 1s linear both;
+        animation-delay: 1.4s;
+    }
+}
+h2{
+    
+}

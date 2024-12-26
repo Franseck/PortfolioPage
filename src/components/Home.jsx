@@ -1,5 +1,6 @@
 import "../scss/home.scss"
 import  Sshape from "../assets/logo-s.png"
+import { Link } from "react-router-dom"
 
 const Home = () => {
   return (
