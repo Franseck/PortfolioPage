@@ -21,6 +21,7 @@ useEffect(() => {
 
   return (
     <div className='container home-page'>
+      <div className="fleks">
         <div className='text-zone'>
         <h1>
             <span className={letterClass}>H</span>
@@ -36,7 +37,10 @@ useEffect(() => {
                <h2>Front-End Developer / Photographer / Videographer </h2>
                <Link to="/contact" className="flat-button">CONTACT PAGE</Link>
         </div>
-        <Logo/>
+        <div className="logos">
+           <Logo/>
+        </div>
+       </div>
     </div>
   )
 }
