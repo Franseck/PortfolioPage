@@ -1,7 +1,7 @@
 import "../scss/home.scss"
 import  Sshape from "../assets/logo-s.png"
 import { Link } from "react-router-dom"
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import AnimatedLetters from "./AnimatedLetters"
 import Logo from "./Logo"
 
@@ -11,11 +11,6 @@ const Home = () => {
 const nameArray = ["e", "c", "k", "i", "n"]
 const jobArray = [ 'W', 'e', 'b', ' ', 'D', 'e', 'v', 'e', 'l','o', 'p', 'e','r','.',]
 
-useEffect(() => {
-    return setTimeout( () => {
-    setLetterClass("text-animate-hover")
-  },4000)
-}, [])
 
 
 

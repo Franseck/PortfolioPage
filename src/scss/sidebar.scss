@@ -2,7 +2,7 @@
 
 .nav-bar {
   background-color: rgb(51, 61, 75);
-  width: 4.5rem;
+  width: 4.4rem;
   height: 100vh;
   position: absolute;
   top: 0;
@@ -110,3 +110,18 @@ ul {
     }
   }
 }
+
+@media screen and (max-width: 600px) {
+
+
+  .nav-bar {
+    width: 4rem;
+.logo {
+
+    img {
+
+    width: 3.3rem;
+
+  }
+  }}
+  }

@@ -7,7 +7,7 @@
     position: absolute;
     opacity: 0;
     top: 5;
-    margin: 3rem 7rem;
+    margin: 3rem 5.5rem;
     z-index: 1;
     transform-style:preserve-3d ;
     animation: fadeIn 1s forwards;
@@ -29,7 +29,7 @@ flex-wrap: wrap;
 }
 h1{
     color: $October-2-hex;
-    font-size: 2.7rem;
+    font-size: 4rem;
     font-family: "Fredericka the Great";
     font-weight: 400;
     &::before{
@@ -38,8 +38,8 @@ h1{
         color: $October-1-hex;
         font-size: 1.2rem;
         position: absolute;
-        margin-top: -2.2rem;
-        left: -2rem;
+        margin-top: -1rem;
+        left: -0.5rem;
         opacity: 0.6;
     }
     &::after{
@@ -48,8 +48,8 @@ h1{
         color: $October-1-hex;
         font-size: 1.2rem;
         position: absolute;
-        margin-top: 1.2rem;
-        margin-left: 1.5rem;
+        margin-top: 3.5rem;
+        margin-left: 0.5rem;
         animation: fadeIn 1s 1.3s backwards;
         opacity: 0.6;
     }
@@ -110,15 +110,17 @@ h2{
 
   @media screen and (max-width: 600px) {
 
-
   .logos {
     position: relative;
     margin-top: 33rem;
     margin-right: 5rem;
   }
+.container{
+  margin: 3rem 4.5rem;
+}
+   
+.home-page h1{
 
-  
-
-  
-
+  font-size: 2.7rem;
+}
   }

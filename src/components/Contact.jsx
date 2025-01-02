@@ -1,5 +1,5 @@
 
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import "../scss/contact.scss"
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import { useRef } from 'react'
@@ -12,11 +12,7 @@ const Contact = () => {
   const form = useRef()
   const position = [51.505, -0.09];
   
-  useEffect(() => {
-    return setTimeout(() => {
-      setLetterClass('text-animate-hover')
-    }, 3000)
-  }, [])
+
 
   const sendEmail = (e) => {
     e.preventDefault()
