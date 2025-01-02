@@ -7,7 +7,8 @@
     position: absolute;
     opacity: 0;
     top: 5;
-    margin: 0 auto;
+    margin: 5rem 10rem;
+
     z-index: 1;
     transform-style:preserve-3d ;
     animation: fadeIn 1s forwards;
@@ -67,7 +68,7 @@ h2{
     animation: fadeIn 1s 1.8s backwards;
 }
 .flat-button {
-    color: #ffd700;
+    color: #8a7e3d;
     font-size: 13px;
     font-weight: 400;
     letter-spacing: 4px;
@@ -77,7 +78,7 @@ h2{
     border: 1px solid #ffd700;
     margin-top: 25px;
     float: left;
-    animation: fadeInAnimation 1s 1.8s backwards;
+     animation: fadeIn 1s 1.8s backwards;
     white-space: nowrap;
 
     &:hover {
@@ -97,7 +98,8 @@ h2{
     float: none;
     display: block;
     margin: 20px auto 0 auto;
-    width: 124px;
+    width: 11rem;
+    text-align: center;
   }
 
   .logo-container {
