@@ -21,11 +21,11 @@
     transform: translateY(-50%);
     width: 40%;
     max-height: 90%;
+    padding-top: 1rem;
 }
 h1{
     color: $October-2-hex;
     font-size: 2rem;
-    margin: 0;
     font-family: "Fredericka the Great";
     font-weight: 400;
     &::before{
