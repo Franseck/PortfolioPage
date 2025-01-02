@@ -3,6 +3,7 @@ import  Sshape from "../assets/logo-s.png"
 import { Link } from "react-router-dom"
 import { useEffect, useState } from "react"
 import AnimatedLetters from "./AnimatedLetters"
+import Logo from "./Logo"
 
 const Home = () => {
 
@@ -35,7 +36,7 @@ useEffect(() => {
                <h2>Front-End Developer / Photographer / Videographer </h2>
                <Link to="/contact" className="flat-button">CONTACT PAGE</Link>
         </div>
-        
+        <Logo/>
     </div>
   )
 }
