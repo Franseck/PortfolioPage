@@ -14,10 +14,11 @@ import AnimatedLetters from "./AnimatedLetters"
 const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
 
-  useEffect(() => {
-    return setTimeout(() => {
-      setLetterClass('text-animate-hover')
+  useEffect(()   =>  {
+     return setTimeout(() =>  {
+       setLetterClass('text-animate-hover') 
     }, 3000)
+    
   }, [])
 
   return (
