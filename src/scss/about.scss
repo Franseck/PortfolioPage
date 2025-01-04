@@ -1,14 +1,21 @@
 @import  "./_variables.scss";
 
 .about-page{
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+}
+
+
+
     .text-zone {
-        position: absolute;
-        left: 10%;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 40%;
-        max-height: 90%;
-        padding-top: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+  margin-top: 5rem;
+  width: 25rem;
+    
     }
     h1{
         color: $October-2-hex;
@@ -16,18 +23,20 @@
         font-family: "Fredericka the Great";
         font-weight: 400;
     }
-}
 
+p{
+  color: $October-1-hex;
+  text-align: left;
+  font-family: "Special Elite" ;
+}
 
 .stage-cube-cont {
     width: 50%;
     height: 100%;
+    padding-top: 5rem;
 
-    padding-top: 18%;
-    margin-left: 0;
-    position: absolute;
 
-    overflow: hidden;
+
   }
   
   .cubespinner {
@@ -99,4 +108,8 @@
     83% {
       transform: rotateX(90deg);
     }
+  }
+
+  @media screen and (max-width: 600px) {
+
   }
