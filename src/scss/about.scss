@@ -112,4 +112,17 @@ p{
 
   @media screen and (max-width: 600px) {
 
+    p{
+      font-size: 0.7rem;
+      margin-left: 7rem;
+      align-items: center;
+      width: 15rem;
+    }
+    .text-zone{
+      margin-left: 1rem;
+    }
+    .stage-cube-cont {
+      margin-left: 5rem;
+      width: 30%;
+    }
   }
