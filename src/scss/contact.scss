@@ -1,10 +1,10 @@
 .contact-form {
-    width: 10rem;
-    margin-top: 20px;
+display: flex;
+justify-content: left;
+  
   
     ul {
-      padding: 0;
-      margin: 0;
+  
   
       li {
         padding: 0;
@@ -13,39 +13,30 @@
         margin-bottom: 10px;
         opacity: 0;
         overflow: hidden;
-        display: block;
+      
         clear: both;
-        position: relative;
+   
         animation: fadeInUp 2s 2s;
         animation-fill-mode: forwards;
       }
   
-      li.half {
-        width: 49%;
-        margin-left: 2%;
-        float: left;
-        clear: none;
-  
-        &:first-child {
-          margin-left: 0;
-        }
-      }
+      
     }
   
     input[type='text'],
     input[type='email'] {
-      width: 100%;
-      border: 0;
+
+
       background: #115173;
       height: 50px;
       font-size: 16px;
       color: #fff;
       padding: 0 20px;
-      box-sizing: border-box;
+    
     }
   
     textarea {
-      width: 100%;
+
       border: 0;
       background: #115173;
       height: 50px;
@@ -75,28 +66,18 @@
   
   .map-wrap {
     background: rgba(8, 253, 216, 0.1);
-    float: right;
-    width: 53%;
-    height: 1%;
-    margin-top: 3%;
+    
+    width: 2rem;
+    height: 2rem;
+   
   }
   
-  .leaflet-container {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    animation: backInRight 1s 1.2s;
-    animation-fill-mode: forwards;
-  }
+
   
   .info-map {
-    position: absolute;
+
     background: #000;
-    top: 50px;
-    right: 30%;
-    z-index: 999999;
-    width: 267px;
+    width: 10rem;
     padding: 20px;
     color: #fff;
     font-family: 'Helvetica';
@@ -116,19 +97,17 @@
   }
   .contact-page {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+
   }
 
 
 
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 600px) {
     .map-wrap {
       float: none;
       margin: 0;
-      width: 100%;
-      height: 400px;
+      width: 20rem;
+      height: 20rem;
     }
     
     .info-map {
