@@ -1,32 +1,16 @@
-.contact-form {
-
+form {
+display: flex;
+flex-direction: column;
+justify-content: center;
+gap: 1rem;
+margin-top: 5rem;
+animation: fadeInUp 2s 2s;
+animation-fill-mode: forwards;
 }
-
-
-
-    ul {
   
-  
-      li {
-        padding: 0;
-        margin: 0;
-      
-        list-style: none;
-        margin-bottom: 10px;
-        opacity: 0;
-    
-      
-        clear: both;
-   
-        animation: fadeInUp 2s 2s;
-        animation-fill-mode: forwards;
-      }
-       
-    }
-  
+     
     input[type='text'],
     input[type='email'] {
-
 
       background: #115173;
       height: 50px;
@@ -37,8 +21,6 @@
     }
   
     textarea {
-
-      border: 0;
       background: #115173;
       height: 50px;
       font-size: 16px;
@@ -49,7 +31,7 @@
     }
   
     .flat-button {
-      color: #ffd700;
+      color: #726f5d;
       font-size: 11px;
       letter-spacing: 3px;
       text-decoration: none;
@@ -59,9 +41,8 @@
       border-radius: 4px;
       background: 0 0;
       text-transform: uppercase;
-      float: right;
-      text-align: center;
-      margin-right: 10px;
+          text-align: center;
+
     }
   
   
