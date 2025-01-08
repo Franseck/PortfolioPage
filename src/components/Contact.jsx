@@ -2,6 +2,7 @@
 import { useState } from 'react'
 import "../scss/contact.scss"
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
+
 import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
 import AnimatedLetters from './AnimatedLetters'
@@ -41,12 +42,14 @@ const Contact = () => {
             />
           </h1>
           <p>
-            I am interested in freelance opportunities - especially on ambitious
-            or large projects. However, if you have any other requests or
+            I am interested in freelance opportunities - especially on ambitious or large projects. 
+            <br /> <br />
+            However, if you have any other requests or
             questions, don't hesitate to contact me using below form either.
           </p>
 </div>
 
+<div className='alt'>
           <div className="contact-form">
             <form ref={form} onSubmit={sendEmail}>
                       
@@ -75,7 +78,12 @@ const Contact = () => {
           
             </form>
           </div>
-    
+          <div className="map-wrap">
+
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d46190.559230312574!2d-79.3916043!3d43.6500418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sca!4v1736302950074!5m2!1sen!2sca"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+     
+</div>
+    </div>
          
                    
 
